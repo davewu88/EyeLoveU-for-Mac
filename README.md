@@ -1,60 +1,70 @@
-EyeLoveU ─ Eye Care Companion (macOS)
+# EyeLoveU ─ Eye Care Companion (macOS)
+
 This is a lightweight eye care reminder application developed using Swift + SwiftUI for macOS.
 
-Key Features
-Status bar icon with pop-up menu
+## Key Features
 
-Keyboard/mouse activity detection to calculate actual working time
+- Status bar icon with pop-up menu
 
-Automatic timer pause and reset when idle for a specified duration
+- Keyboard/mouse activity detection to calculate actual working time
 
-Full-screen rest reminder window (with sound effect)
+- Automatic timer pause and reset when idle for a specified duration
 
-Multi-language support (auto-detected from system settings)
+- Full-screen rest reminder window (with sound effect)
 
-Preferences window
+- Multi-language support (auto-detected from system settings)
 
-Technical Implementation
-Swift 5 + SwiftUI + AppKit
+- Preferences window
 
-UserDefaults for preference storage
 
-Multi-language localization support
+## Technical Implementation
 
-Compatible with macOS 13+ on both arm64 and Intel x86_64 platforms
+- Swift 5 + SwiftUI + AppKit
 
-How to Run
-Open the project in Xcode
+- serDefaults for preference storage
 
-Select EyeLoveUApp as the launch target
+- Multi-language localization support
 
-Build & Run (⌘R)
+- Compatible with macOS 13+ on both arm64 and Intel x86_64 platforms
 
-Project Structure
-EyeLoveUApp.swift: App entry point
 
-StatusBarController.swift: Manages status bar icon and menu
+## How to Run
 
-IdleMonitor.swift: Keyboard/mouse activity detection
+- Open the project in Xcode
 
-RestReminderWindow.swift: Full-screen rest reminder
+- Select EyeLoveUApp as the launch target
 
-SettingsView.swift: Preferences view
+- Build & Run (⌘R)
 
-Localization/: Multi-language resources
 
-Assets.xcassets: App icons
+## Project Structure
 
-Installation & Usage
-Package the app into a DMG installer using CreateDMG
+- EyeLoveUApp.swift: App entry point
 
-Run the installer and drag EyeLoveU.app to the Applications folder
+- StatusBarController.swift: Manages status bar icon and menu
 
-Open macOS "System Settings" → "Privacy & Security" → "Accessibility", click "+" and select EyeLoveU from the Applications folder. This permission is required for keyboard/mouse activity detection to track working time.
+- IdleMonitor.swift: Keyboard/mouse activity detection
 
-For auto-launch at startup: Open "System Settings" → "General" → "Login Items", click "+" and select EyeLoveU.
+- RestReminderWindow.swift: Full-screen rest reminder
 
-Since this is not an Apple Developer certified application, first-time users need to right-click EyeLoveU.app in the Applications folder, select "Open", then authenticate with your password. This step is only required once.
+- SettingsView.swift: Preferences view
+
+- Localization/: Multi-language resources
+
+- Assets.xcassets: App icons
+
+
+## Installation & Usage
+
+- Package the app into a DMG installer using CreateDMG
+
+- Run the installer and drag EyeLoveU.app to the Applications folder
+
+- Open macOS "System Settings" → "Privacy & Security" → "Accessibility", click "+" and select EyeLoveU from the Applications folder. This permission is required for keyboard/mouse activity detection to track working time.
+
+- For auto-launch at startup: Open "System Settings" → "General" → "Login Items", click "+" and select EyeLoveU.
+
+- Since this is not an Apple Developer certified application, first-time users need to right-click EyeLoveU.app in the Applications folder, select "Open", then authenticate with your password. This step is only required once.
 
 
 
